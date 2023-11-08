@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/userInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/getUserInput"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="Type a message to bot"
+            android:layout_margin="10dp"
+            android:gravity="top|start"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonoregular"/>
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="send"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_border"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnLeaveChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="leave"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"/>
+</LinearLayout>

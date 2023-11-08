@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page">
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <!-- Personal user settings form components -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Change user credentials."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+        <!-- User Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="User Name"
+            android:paddingBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextUserNamePersonal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="UserName"
+            android:paddingLeft="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <!-- First Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextFirstNamePersonal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your first name"
+            android:paddingLeft="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <!-- Last Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextLastNamePersonal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your last name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="15dp"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextEmailPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your email"
+            android:paddingLeft="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextPasswordPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your password"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password Validation"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+
+        <EditText
+            android:id="@+id/editTextPasswordValid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Re-enter your password"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <!-- Add more fields based on your model -->
+
+        <!-- Save button -->
+        <Button
+            android:id="@+id/buttonSavePersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="save changes"
+            android:background="@drawable/rounded_border"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottom_navigation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="@color/shadow"
+app:menu="@menu/bottom_nav_menu"
+app:itemIconTint="@color/white"
+app:itemTextColor="@color/white"
+app:itemTextAppearanceActive="@font/robotomonobold"/>
+
+    </RelativeLayout>

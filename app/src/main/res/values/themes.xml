@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Emmurse" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- SplashTheme for SplashActivity -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_page</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Your blank theme -->
+    <style name="BlankTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Set the background color for this theme -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- Optionally, set other theme properties here -->
+    </style>
+</resources>

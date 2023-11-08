@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/eventNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Event Name"
+            android:textSize="16dp"
+            android:fontFamily="@font/robotomonobold"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotomonoregular"
+            android:textAlignment="center"
+            android:paddingHorizontal="5dp"
+            />
+
+        <Button
+            android:id="@+id/bookEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Event"
+            android:paddingBottom="10dp"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="@font/robotomonobold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

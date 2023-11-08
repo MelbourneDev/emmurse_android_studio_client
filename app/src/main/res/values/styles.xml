@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCustomTabText">
+        <item name="android:textSize">18sp</item> <!-- You can set the size you want -->
+        <item name="android:fontFamily">@font/robotomonobold</item> <!-- Optional: Set a custom font if you want -->
+        <item name="android:textStyle">bold</item> <!-- Optional: If you want the text to be bold -->
+    </style>
+</resources>

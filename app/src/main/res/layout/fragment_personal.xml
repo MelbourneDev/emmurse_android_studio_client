@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/eMmerseLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo1" />
+
+
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <Spinner
+            android:id="@+id/subscriptionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonoregular"
+            android:padding="12dp"
+            android:dropDownHeight="200dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_dropdown_arrow" />
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="first name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="last name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextRegistrationPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextTextPasswordValidation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomonoregular"
+        android:hint="confirm password"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/registerPersonalAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/robotomonobold"
+        android:text="register"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="10dp"/>
+
+
+
+        <SeekBar
+            android:id="@+id/slideToActSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/slide_thumb"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textViewSlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide to return to login"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotomonobold"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

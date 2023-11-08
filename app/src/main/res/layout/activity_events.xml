@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutFree"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/freeTierTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FREE TIER"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/freeTierCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="5dp"
+                android:backgroundTint="@color/colorFree"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/freeTierRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/freeBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscribe to this tier to gain access"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:background="#55000000"
+                android:textColor="#FFF"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="150dp" />
+        </RelativeLayout>
+
+        <!-- Repeat the CardView section for each tier (bronze, silver, gold) -->
+
+
+        <!-- Tier CardView Template (Replicate this section for each tier) -->
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBronze"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/bronzeTierTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BRONZE TIER"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bronzeTierCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/colorBronze"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bronzeTierRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/bronzeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribe to this tier to gain access"
+            android:textSize="20dp"
+            android:fontFamily="@font/robotomonobold"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:background="#55000000"
+            android:textColor="#FFF"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp" />
+    </RelativeLayout>
+
+        <!-- Repeat the CardView section for each tier (bronze, silver, gold) -->
+
+        <!-- Tier CardView Template (Replicate this section for each tier) -->
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSilver"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/silverTierTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SILVER TIER"
+                android:textSize="20dp"
+                android:fontFamily="@font/robotomonobold"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/silverTierCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/colorSilver"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/silverTierRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                </LinearLayout>
+               </FrameLayout>
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/silverBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscribe to this tier to gain access"
+                android:textSize="20dp"
+                android:fontFamily="@font/robotomonobold"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:background="#55000000"
+                android:textColor="#FFF"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="150dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGold"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/goldTierTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOLD TIER"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/goldTierCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/colorGold"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/goldTierRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/goldBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscribe to this tier to gain access"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:background="#55000000"
+                android:textColor="#FFF"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="150dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/shadow"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceActive="@font/robotomonobold"/>
+
+    </RelativeLayout>

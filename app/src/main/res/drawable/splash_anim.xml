@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+<!--    <item android:drawable="@drawable/splash_page" android:duration="500"  />-->
+<!--    <item android:drawable="@drawable/splash_page1" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page2" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page3" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page4" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page5" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page6" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page7" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page8" android:duration="500" />-->
+<!--    <item android:drawable="@drawable/splash_page" android:duration="500"  />-->
+
+
+</animation-list>

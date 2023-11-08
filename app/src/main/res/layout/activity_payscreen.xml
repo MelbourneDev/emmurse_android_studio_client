@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payscreen.PayScreenActivity"
+    android:background="@drawable/login_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <!-- Credit Card Option -->
+            <ImageView
+                android:id="@+id/creditCardOption"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/credit_card_icon"
+                android:contentDescription="Credit Card Option"
+                android:clickable="true"
+                android:onClick="onCreditCardOptionClicked" />
+
+            <!-- PayPal Option -->
+            <ImageView
+                android:id="@+id/payPalOption"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/paypal_icon"
+                android:contentDescription="PayPal Option"
+                android:clickable="true"
+                android:onClick="onPayPalOptionClicked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payPalForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/payPalEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="paypal email"
+                android:background="@drawable/rounded_border"
+                android:paddingLeft="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/robotomonobold"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/payPalPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="paypal password"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_border"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/robotomonobold"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/creditCardForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Username: "
+            android:background="@drawable/rounded_border"
+            android:padding="13dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/subscriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Subscription: "
+            android:background="@drawable/rounded_border"
+            android:padding="13dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="First Name"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Last Name"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:maxLength="19"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/expiryDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Expiry Date (MM/YY)"
+            android:inputType="number"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:maxLength="5"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/cvvEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:background="@drawable/rounded_border"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="pay now"
+            android:background="@drawable/rounded_border"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/robotomonobold"/>
+    </LinearLayout>
+
+</ScrollView>

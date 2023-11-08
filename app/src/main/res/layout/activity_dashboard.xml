@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="16dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/personalisedBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/gradient_about_background"
+            app:cardCornerRadius="10dp">
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            android:text="" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo1"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dashboardEventRecyclerviewCard"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/shadow_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="event schedule"
+                        android:paddingTop="20dp"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/robotomonobold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bookedEventsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dashboard_borders" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="370dp"
+            android:layout_height="280dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/vreventafrica"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DashboardActivity"
+            android:background="@drawable/gradient_about_background"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotomonobold"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="8dp"
+                android:text="about eMmurse"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:padding="16dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/aboutTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingTop="25dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotomonobold"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="8dp"
+                     />
+            </ScrollView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="370dp"
+                android:layout_height="280dp"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/vrtajmahal"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btnNavigateToEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border"
+                android:text="View All Events"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/contactUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:text="Go to Contact Page"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:id="@+id/pricingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:text="Go to Pricing Page"
+            android:layout_marginTop="15dp"/>
+
+        <FrameLayout
+            android:id="@+id/socialIconsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/button_rounded_border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                >
+
+                <!-- LinkedIn Icon -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/linkedin"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="LinkedIn" />
+
+                <!-- Instagram Icon -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/instagram"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Instagram" />
+
+                <!-- X Icon -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/x"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="X" />
+
+                <!-- YouTube Icon -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/youtube"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="YouTube" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="connect to eMmerse links."
+                    android:fontFamily="@font/robotomonobold"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:text="logout"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotomonobold"
+            android:layout_marginBottom="15dp"
+            android:padding="5dp"
+            android:text="This app is for a class assignment and not for commercial purposes" />
+    </LinearLayout>
+
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/shadow"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceActive="@font/robotomonobold"
+        />
+
+
+</RelativeLayout>
